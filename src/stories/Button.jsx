@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Button as KendoButton } from '@progress/kendo-react-buttons';
 import PropTypes from 'prop-types';
 
 import './button.css';
@@ -8,20 +8,22 @@ import './button.css';
 export const Button = ({
   primary = false,
   backgroundColor = null,
-  size = 'medium',
+  isDisabled = false,
   label,
+  size = 'medium',
   ...props
 }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
+    <KendoButton
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
+      style={{ backgroundColor }}
+      disabled={isDisabled}
       {...props}
     >
       {label}
-    </button>
+    </KendoButton>
   );
 };
 
@@ -30,10 +32,10 @@ Button.propTypes = {
   primary: PropTypes.bool,
   /** What background color to use */
   backgroundColor: PropTypes.string,
-  /** How large should the button be? */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  /** Is the button disabled? */
+  isDisabled: PropTypes.bool,
   /** Button contents */
   label: PropTypes.string.isRequired,
-  /** Optional click handler */
-  onClick: PropTypes.func,
+  /** How large should the button be? */
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
