@@ -1,11 +1,11 @@
 import { fn } from 'storybook/test';
 
-import { Button } from './Button';
+import { InLineCitation } from './InLineCitations';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Patterns for Trust/Citations/In-Line Citations',
+  component: InLineCitation,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -21,36 +21,23 @@ export default {
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Link = {
   args: {
-    primary: true,
-    label: 'Button',
+    link: true,
   },
 };
 
-export const Secondary = {
+export const Icon = {
   args: {
-    label: 'Button',
+    icon: true,
+    link: false
   },
 };
 
-export const Large = {
+export const Tooltip = {
   args: {
-    size: 'large',
-    label: 'Button',
+    icon: false, 
+    link: true,
+    tooltip: true,
   },
-};
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
-};
-
-export const Test = {
-  args: {
-    primary: false,
-    label: "Button"
-  }
 };

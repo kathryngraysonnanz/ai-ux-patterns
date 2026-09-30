@@ -1,0 +1,19 @@
+.icon-link {
+    background-color: lightgrey; 
+    padding: 1px 5px 0 8px;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.icon-link svg {
+    margin-top: -2px;
+    padding-left: 2px
+}
+
+p {
+    line-height: 1.2;
+}
+
+.tooltip-content p {
+    font-size: 0.8em;
+} 
