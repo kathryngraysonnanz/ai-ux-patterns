@@ -14,6 +14,7 @@
   "dependencies": {
     "@progress/kendo-react-buttons": "^16.1.0",
     "@progress/kendo-react-common": "^16.1.0",
+    "@progress/kendo-react-layout": "^16.1.0",
     "@progress/kendo-react-tooltip": "^16.1.0",
     "@progress/kendo-svg-icons": "^5.4.0",
     "@progress/kendo-theme-meridian": "^14.5.0",

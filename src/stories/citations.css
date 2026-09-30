@@ -17,3 +17,27 @@ p {
 .tooltip-content p {
     font-size: 0.8em;
 } 
+
+.citation-sidebar {
+    width: min(100%, 960px);
+    min-height: 360px;
+    text-align: left;
+}
+
+.citation-sidebar main {
+    padding: 10px
+}
+
+.citation-snippet {
+    padding: 2px 3px;
+}
+
+.citation-snippet-active {
+    background-color: #fff1a8;
+}
+
+.citation-drawer {
+    min-height: 360px;
+}
+
+

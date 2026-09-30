@@ -6,7 +6,9 @@ import { globeLinkIcon, hyperlinkOpenIcon } from '@progress/kendo-svg-icons';
 import { Popover } from '@progress/kendo-react-tooltip';
 import './citations.css';
 
-/** The In-Line Citation pattern is a good fit for situations where you want to provide a direct link to the source content or a display a very small amount of additional information (i.e. the name of the source document or a short snippet of the relevant content). Situations where the user requires additional contextual information without being directed away from the current experience should use the Citation Sidebar pattern instead. */
+/** The In-Line Citation pattern is a good fit for situations where you want to provide a direct link to the source content or a display a very small amount of additional information (i.e. the name of the source document or a short snippet of the relevant content). 
+ * 
+ * Situations where the user requires in-depth contextual information without being directed away from the current experience should use the Citation Sidebar pattern instead. */
 
 export const InLineCitation = ({
   link = true,
@@ -60,7 +62,7 @@ export const InLineCitation = ({
             <p><b>Document Title</b></p>
             <p>"<i>...aliquip ex ea commodo consequat.</i> Vileat esse mollit anim quis nostrud."
             </p>
-           <Button endIcon={<SvgIcon icon={hyperlinkOpenIcon} />} size="xs">Open source material</Button>
+           <Button endIcon={<SvgIcon icon={hyperlinkOpenIcon} />} size="xs">View source material</Button>
           </Popover>
         )}
       </>) : (<>aliquip ex ea commodo consequat.</>) 
